@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrimeNest Realty | Modern Real Estate Platform</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">PrimeNest <span>Realty</span></a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- 1. HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Find a Place You'll Love to Call Home</h1>
+      <p>Discover beautiful homes, apartments, commercial properties, and land in prime locations.</p>
+      <div class="hero-btns">
+        <a href="#properties" class="btn btn-primary">View Properties</a>
+        <a href="#contact" class="btn btn-secondary">Contact an Agent</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PROPERTY SEARCH SECTION -->
+  <div class="container search-section">
+    <div class="search-card">
+      <div class="search-grid">
+        <select class="form-control" id="searchType">
+          <option value="all">Buy / Rent</option>
+          <option value="buy">For Sale</option>
+          <option value="rent">For Rent</option>
+ </select>
+        <select class="form-control" id="searchLocation">
+          <option value="all">Location (All)</option>
+          <option value="Lekki">Lekki</option>
+          <option value="Ikeja">Ikeja</option>
+          <option value="Ikoyi">Ikoyi</option>
+ </select>
+      <input type="number" class="form-control" placeholder="Min Price (₦)">
+      <input type="number" class="form-control" placeholder="Max Price (₦)">
+      <button class="btn btn-primary" onclick="filterListings()">Search Properties</button>
+  </div>
+  </div>
+  </div>
+  <!-- 11. FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="color: var(--text); margin-bottom: 0.5rem;">PrimeNest Realty</h3>
+          <p>Helping you find the place you'll love to call home.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 0.5rem;">Quick Links</h4>
+          <p><a href="index.html">Home</a> | <a href="properties.html">Properties</a> | <a href="about.html">About</a></p>
+        </div>
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 0.5rem;">Contact</h4>
+          <p>Lagos, Nigeria</p>
+          <p>info@primenestrealty.com</p>
+        </div>
+      </div>
+      <p style="text-align: center; border-top: 1px solid var(--border); padding-top: 1rem;">&copy; 2026 PrimeNest Realty. All rights reserved. (Demo Portfolio Project)</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
