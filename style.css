@@ -1,14 +1,14 @@
 
     /* --- CSS VARIABLES & SYSTEM RESET --- */
     :root {
-      --primary: #29462e;
-      --secondary: #223721;
+      --primary: #100451ff;
+      --secondary: #10099a;
       --accent:#f1db13;
-      --accent-hover: #dbe8ef;
+      --accent-hover: #0c0d0e;
       --whatsapp: #1b9547;
       --text:white;
       --text-muted: #b6babe;
-      --border: #577652;
+      --border: #140170;
       --max-width: 1200px; 
       --radius: 8px;
     }
@@ -31,7 +31,7 @@
 
     /* --- NAVIGATION --- */
     nav { position: sticky; top: 0;
-         background: rgba(53, 95, 54, 0.813);
+         background: rgba(10, 7, 150, 0.813);
          backdrop-filter: blur(10px); z-index: 1000;
          border-bottom: 1px solid var(--border); }
     .nav-container {
@@ -62,8 +62,8 @@
     /* --- HERO SECTION --- */
     .hero {
       min-height: 75vh;
-      background: linear-gradient(rgba(72, 130, 106, 0.549),
-       rgba(13, 13, 32, 0.708)),
+      background: linear-gradient(rgba(5, 3, 50, 0.769),
+       rgba(6, 3, 31, 0.708)),
         url(estate1.jpeg) center/cover;
       display: flex;
       align-items: center;
@@ -86,14 +86,15 @@
        border-radius: var(--radius); 
        font-weight: 700; cursor: pointer;
         transition: background 0.170s;border:none;}
-    .btn-primary { background: rgba(224, 238, 228, 0.872); 
-      color: rgb(6, 59, 37); }
-    .btn-primary:hover { background:rgba(151, 166, 157, 0.532); }
+    .btn-primary { background: rgba(187, 187, 29, 0.992); 
+      color: rgb(2, 2, 5); }
+    .btn-primary:hover { background:rgb(151, 166, 157); }
     .btn-secondary { background:rgba(12, 13, 0, 0.484); 
       border: 1px solid var(--border);
        color: var(--text); }
     .btn-secondary:hover { 
-      background:#223721d3 ; }
+      background:rgba(10, 7, 150, 0.813) ; }
+
 
     /* --- SEARCH SECTION --- */
     .search-section { margin-top: -40px; 
@@ -101,7 +102,7 @@
     .search-card { background: var(--secondary);
          border: 1px solid var(--border);
           border-radius: var(--radius); padding: 1.5rem;
-           box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+           box-shadow: 0 10px 25px rgba(3, 5, 54, 0.979); }
     .search-grid { display: grid;
          grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
           gap: 1rem; }
@@ -119,7 +120,7 @@
           border-radius: var(--radius); 
           overflow: hidden; transition: transform 0.2s; }
     .card:hover { transform: translate(-5px); }
-    .card-img { height: 220px; background: #334155;
+    .card-img { height: 220px; background: #0a047dee;
          position: relative; background-size: cover;
           background-position: center; }
     .badge { position: absolute;
@@ -161,7 +162,7 @@
            padding: 1.5rem; }
     .agent-card { text-align: center; }
     .agent-avatar { width: 90px; height: 90px;
-         border-radius: 50%; background: #334155;
+         border-radius: 50%; background: #969090;
           margin: 0 auto 1rem; }
 
     /* --- CONTACT & FOOTER --- */
@@ -172,7 +173,7 @@
          color: #fff; width: 100%; display: flex;
           align-items: center; justify-content: center;
            gap: 0.5rem; margin-top: 1rem; }
-    footer { background: #19442c9f;
+    footer { background:rgba(10, 7, 150, 0.813);
          border-top: 1px solid var(--border);
           padding: 3rem 0 1.5rem; margin-top: 4rem;
            color: var(--text-muted); font-size: 0.9rem; }
@@ -182,7 +183,7 @@
 
     /* --- MODAL --- */
     .modal { display: none; position: fixed;
-       inset: 0; background: rgba(13, 32, 21, 0.713);
+       inset: 0; background: rgba(47, 14, 237, 0.713);
         z-index: 2000; align-items: center; 
         justify-content: center; padding: 1rem; }
     .modal-content { background: var(--secondary);
