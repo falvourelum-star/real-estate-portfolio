@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav>
+        <div class="container nav-container">
+        <a href="#" class="logo">PrimeNest <span>Realty</span></a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <!-- 10. CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-wrapper">
+        <div>
+          <p>📍 Lagos, Nigeria</p>
+          <p>📞 +234 800 123 4567</p>
+          <p>✉️ info@primenestrealty.com</p>
+          <a href="https://wa.me/2348001234567" target="_blank" class="btn whatsapp-btn">
+            💬 Chat via WhatsApp
+          </a>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Inquiry sent successfully!');">
+          <input type="text" class="form-control" placeholder="Your Name" required style="margin-bottom: 1rem;">
+          <input type="email" class="form-control" placeholder="Your Email" required style="margin-bottom: 1rem;">
+          <input type="text" class="form-control" placeholder="Property of Interest" style="margin-bottom: 1rem;">
+          <textarea class="form-control" rows="4" placeholder="Your Message" required style="margin-bottom: 1rem;"></textarea>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- 11. FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="color: var(--text); margin-bottom: 0.5rem;">PrimeNest Realty</h3>
+          <p>Helping you find the place you'll love to call home.</p>
+        </div>
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 0.5rem;">Quick Links</h4>
+          <p><a href="index.html">Home</a> | <a href="properties.html">Properties</a> | <a href="about.html">About</a></p>
+        </div>
+        <div>
+          <h4 style="color: var(--text); margin-bottom: 0.5rem;">Contact</h4>
+          <p>Lagos, Nigeria</p>
+          <p>info@primenestrealty.com</p>
+        </div>
+      </div>
+      <p style="text-align: center; border-top: 1px solid var(--border); padding-top: 1rem;">&copy; 2026 PrimeNest Realty. All rights reserved. (Demo Portfolio Project)</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
